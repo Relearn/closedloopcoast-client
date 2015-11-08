@@ -33,6 +33,7 @@ var linechart = {
     },
     
     resize: function(){
+        return;
         x.range([0, width]);
         y.range([height, 0]);
     },
