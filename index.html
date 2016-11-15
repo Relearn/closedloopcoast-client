@@ -188,6 +188,7 @@
           channels.forEach(function(channel){
             var ch = channel._id;
             
+            
             var items = data.filter(function(f){return f[ch]});
             var push = {_id: latest.generic.heartbeat};
             push[ch] = latest[ch].raw[0];
@@ -200,6 +201,7 @@
               if(frame<=times[0]) return -1100;
               if(frame>=times[length-1]) return -1100;
               var index = d3.bisectLeft(times, frame);
+              if(values[index-1]<=-1100 || values[index]<=-1100) return -1100;
               return linear(times[index-1], times[index], values[index-1], values[index], frame);
             })
             
