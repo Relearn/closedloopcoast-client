@@ -27,7 +27,7 @@
     var MONGOLAB_API_KEY = "-fMnXxKexEfV92dWFsUQvOCALgSBNyxJ";
     var MONGOLAB_BASE_URL = "https://api.mongolab.com/api/1";
     var MONGOLAB_DATABASES = "/databases";
-    var PERIOD = 10100;
+    var PERIOD = 2100;
       
     var COLORS_TEMPERATURE = {
       "-80:-75": "#ffffff", "-75:-70": "#ffffff",
@@ -140,9 +140,11 @@
           .style("height", legendH/5 + "px");
         view.append("div")              
           .style("line-height", 2*legendH/5 + "px")
+          .style("font-size", 2*legendH/5 + "px")
           .text(d.split(":")[0]);
         view.append("div")              
           .style("line-height", 2*legendH/5 + "px")
+          .style("font-size", 2*legendH/5 + "px")
           .text(d.split(":")[1]);
       })
 
