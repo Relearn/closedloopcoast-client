@@ -1,22 +1,22 @@
 * {
     font-family: "Consolas", monospace;
-    margin: 0px;
+    margin: 0;
     overflow: hidden;
 }
 
 #error {
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     text-align: center;
     color: pink;
     width: 100%;
 }
 
 
-#header{
+#header {
     position: absolute;
-    top: 0%;
-    color: black;
+    top: 0;
+    color: #000;
     width: 100%;
     height: 5%;
     font-family: monospace;
@@ -27,24 +27,25 @@
 }
 
 .flex-container {
-    display:flex;
+    display: flex;
     align-items: center; /* Vertical center alignment */
     justify-content: center; /* Horizontal center alignment */
 }
 
-#footer{
+#footer {
     position: absolute;
     top: 90%;
-    color: black;
+    color: #000;
     width: 100%;
     height: 10%;
     text-align: left;
     font-family: monospace;  
 }
-#container{
+
+#container {
     position: absolute;
     top: 5%;
-    color: black;
+    color: #000;
     width: 100%;
     height: 85%;
     text-align: left;
@@ -115,7 +116,7 @@
 
 .line {
   background: #000;
-  opacity: .2;
+  opacity: 0.2;
   z-index: 2;
 }
 
@@ -126,21 +127,23 @@
   width: 100%;
   text-align: center;
 }
+
 .heartbeat.dead {
   background-color: pink;
 }
 
 .legend {
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
 }
 
 .legend .color {
   display: inline-block;
 }
+
 .legend .color div {
   display: block;
-  padding: 0px 3px;
+  padding: 0 3px;
   text-shadow: 1px 1px 1px rgba(255,255,255,1);
   text-align: center;
 }
@@ -149,18 +152,18 @@
 
 
 
-#title{
+#title {
     position: absolute;
     top: 5%;
     left: 5%;
-    color: white;
+    color: #fff;
 }
 
-#subtitle{
+#subtitle {
     position: absolute;
     bottom: 3%;
     text-align: center;
-    color: white;    
+    color: #fff;    
     width: 100%;
 }
 
@@ -168,56 +171,55 @@
     color: pink;
 }
 
-#dome{
+#dome {
     background-color: #6f8e1a;
     width: 100%;
     height: 100%;
 }
 
-#dome .dome-shell{
+#dome .dome-shell {
     fill: none;
-    stroke: white;
+    stroke: #fff;
 }
 
-#dome .dome-reactor{
-    fill: black;
+#dome .dome-reactor {
+    fill: #000;
     fill-opacity: 0.1;
-    stroke: white;
+    stroke: #fff;
 }
 
-#dome .dome-measurepoint circle{
-    fill:white;
+#dome .dome-measurepoint circle {
+    fill: #fff;
 }
 
-#dome .dome-measurepoint text{
-    fill: white;
+#dome .dome-measurepoint text {
+    fill: #fff;
     dominant-baseline: ideographic;
     opacity: 1;
     text-anchor: middle;
 }
 
-.dome-legend{
+.dome-legend {
     text-anchor: middle;
     dominant-baseline: ideographic;
     text-transform: uppercase;
-    fill: white;
+    fill: #fff;
 }
 
-.sparkline{
+.sparkline {
     fill: none;
-    stroke: white;
+    stroke: #fff;
     opacity: 1;
 }
 
-.sparkline-shade{
+.sparkline-shade {
     fill: none;
     stroke: #6f8e1a;
     opacity: 1;
 }
 
-
-.sparklinetip{
-    fill: white;
+.sparklinetip {
+    fill: #fff;
     stroke: #6f8e1a;
     opacity: 1;
 }
